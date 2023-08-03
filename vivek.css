@@ -134,11 +134,42 @@ border: 1px solid green;
   /* project css start here */
   
 
-#projects p{
-  text-decoration-line: none;
+#projects p a{
+  margin-top: 15px;
   color: azure;
   font-style: italic;
   text-decoration: none;
 
 }
 
+.section a{
+  display: inline-block;
+  text-decoration: none;
+  color: #efefef
+}
+
+
+li {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+progress {
+  width: 65%;
+  height: 20px;
+  color: #3fb6b2;
+  background: #efefef;
+}
+
+progress::-webkit-progress-bar {
+  background: #efefef;
+}
+
+progress::-webkit-progress-value {
+  background: #3fb6b2;
+}
+
+progress::-moz-progress-bar {
+  color: #3fb6b2;
+  background: #efefef;
+}
