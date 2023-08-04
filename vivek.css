@@ -4,12 +4,7 @@
     margin: 0;
 }
 
-h1{ 
-    font-size: 80px;
-    text-align: center;
-    color: #008f0a;
-    
-}
+
 
 
 body{
@@ -22,7 +17,7 @@ body{
 
 
 footer{
-margin-top: 100%;
+margin-top: 30%;
 padding: 0px;
 height: 75px;
 text-align: center;
@@ -79,7 +74,12 @@ border: 1px solid green;
       display: block;
     }
   }
-
+h1{ 
+    font-size: 80px;
+    text-align: center;
+    color: #008f0a;
+    
+} 
 .pfp{
     color: aliceblue;
     position: relative;
@@ -125,10 +125,10 @@ border: 1px solid green;
     
   }
 
-  #social{
+  /* #social{
     border: 2px solid whitesmoke;
-    /* display: flex; */
-  }
+   
+  } */
 
 
   /* project css start here */
@@ -172,4 +172,44 @@ progress::-webkit-progress-value {
 progress::-moz-progress-bar {
   color: #3fb6b2;
   background: #efefef;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .pfp{
+    color: aliceblue;
+    position: relative;
+    z-index: 100;
+    /* border: 1px solid whitesmoke; */
+    margin-bottom: 1%;
+    padding: 5px;
+    border-radius: 20px;
+    background-image: url(https://media.giphy.com/media/3ov9jLGGAksVwJZra0/giphy.gif);
+}
+
+h1{ 
+  font-size: 50px;
+  text-align: center;
+  color: #008f0a;
+  
+} 
+
+.logo {
+  margin: 8px;
+  padding: 2px;
+  display: inline-block;
+  justify-content: center;
+  
+}
+body{
+  background-image: url("./images/bc.jpg");
+ background-size: cover;
+ background-repeat: cover;
+ z-index: -1;
+}
+
+
+
+
 }
