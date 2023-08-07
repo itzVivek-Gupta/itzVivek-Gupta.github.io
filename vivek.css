@@ -220,8 +220,8 @@ progress::-moz-progress-bar {
   #footer-content {
     font-weight: 300;
     font-size: 25px;
-    margin: auto;
-    padding: 25px;
+    margin: 0;
+    padding: 20px;
     color: rgb(0, 0, 0);
   }
 }
