@@ -210,8 +210,8 @@ progress::-moz-progress-bar {
   color: #000;
 }
   footer {
-    margin-top: 30%;
-    padding: 0px;
+    margin-top: 40%;
+    padding: 2px;
     height: 75px;
     text-align: center;
     position: relative;
@@ -223,9 +223,9 @@ progress::-moz-progress-bar {
   }
 
   #footer-content {
-    font-weight: 300;
+    font-weight: bold;
     font-size: 25px;
-    margin: 0;
+    margin: 5px;
     padding: 20px;
     color: rgb(0, 0, 0);
     z-index: 2;
