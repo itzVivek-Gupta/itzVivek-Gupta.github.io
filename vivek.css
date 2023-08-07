@@ -14,22 +14,24 @@ body {
 }
 
 footer {
-  margin-top: 30%;
-  padding: 0px;
-  height: 75px;
+  margin-top: 40%;
+  padding: 6px;
+  height: 100px;
   text-align: center;
   background-image: url("./images/footer.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  z-index: -1;
+
 }
 
 #footer-content {
+  margin-bottom: 50%;
   font-size: 40px;
   margin: auto;
   padding: 25px;
   color: aquamarine;
+  z-index: -2
 }
 
 /* nav start here */
@@ -215,6 +217,9 @@ progress::-moz-progress-bar {
     position: relative;
     background-color: #faaca8;
     background-image: linear-gradient(19deg, #faaca8 0%, #ddd6f3 100%);
+    /* Add the blur effect
+  filter: blur(8px);
+  -webkit-filter: blur(8px); */
   }
 
   #footer-content {
@@ -223,5 +228,6 @@ progress::-moz-progress-bar {
     margin: 0;
     padding: 20px;
     color: rgb(0, 0, 0);
+    z-index: 2;
   }
 }
