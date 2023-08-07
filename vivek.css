@@ -1,154 +1,137 @@
-*{
-  font-family:'Ubuntu', sans-serif;
-    padding: 0;
-    margin: 0;
+* {
+  font-family: "Ubuntu", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
-
-
-
-body{
-     background-image: url("./images/bc.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    z-index: -1;
+body {
+  background-image: url("./images/bc.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: -1;
 }
 
-
-footer{
-margin-top: 30%;
-padding: 0px;
-height: 75px;
-text-align: center;
-background-image: url("./images/footer.jpg");
-background-size: cover;
-background-repeat: no-repeat;
-position: relative;
-z-index: -1;
-
-border: 1px solid green;
-
+footer {
+  margin-top: 30%;
+  padding: 0px;
+  height: 75px;
+  text-align: center;
+  background-image: url("./images/footer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: -1;
 }
 
-#footer-content{
+#footer-content {
   font-size: 40px;
-    margin: auto;
-    padding: 25px;
-    color: aquamarine;
-   
-
+  margin: auto;
+  padding: 25px;
+  color: aquamarine;
 }
 
 /* nav start here */
 /* Style the navigation bar */
 .navbar {
-    width: 100%;
-    background-color: #005213;
-    overflow: auto;
-  }
-  
-  /* Navbar links */
+  width: 100%;
+  background-color: #005213;
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #008f0a;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
   .navbar a {
-    float: left;
-    text-align: center;
-    padding: 12px;
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
+    float: none;
+    display: block;
   }
-  
-  /* Navbar links on mouse-over */
-  .navbar a:hover {
-    background-color: #000;
-  }
-  
-  /* Current/active navbar link */
-  .active {
-    background-color: #008f0a;
-  }
-  
-  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-  @media screen and (max-width: 500px) {
-    .navbar a {
-      float: none;
-      display: block;
-    }
-  }
-h1{ 
-    font-size: 80px;
-    text-align: center;
-    color: #008f0a;
-    
-} 
-.pfp{
-    color: aliceblue;
-    position: relative;
-    z-index: 100;
-    /* border: 1px solid whitesmoke; */
-    margin-bottom: 2%;
-    padding: 60px;
-    border-radius: 20px;
-    background-image: url(https://media.giphy.com/media/3ov9jLGGAksVwJZra0/giphy.gif);
+}
+h1 {
+  font-size: 80px;
+  text-align: center;
+  color: #008f0a;
+}
+.pfp {
+  color: aliceblue;
+  position: relative;
+  z-index: 100;
+  /* border: 1px solid whitesmoke; */
+  margin-bottom: 2%;
+  padding: 60px;
+  border-radius: 20px;
+  background-image: url(https://media.giphy.com/media/3ov9jLGGAksVwJZra0/giphy.gif);
 }
 .section {
-    color: aliceblue;
-    position: relative;
-    z-index: 100;
-    /* border: 1px solid whitesmoke; */
-    margin-bottom: 4%;
-    padding: 9px;
-    text-align: center;
-  }
-  .section h2{
-    
-    border: 2px solid rgb(200, 2, 164);
-    border-radius: 12px;
-    margin-left: 30%;
-    margin-right: 30%;
-    padding: 5px;
-    text-align: center;
-    background-image: url(https://media.giphy.com/media/3ov9jLGGAksVwJZra0/giphy.gif);
-  }
-  
-  .section p{
-    padding: 10px;
-    text-align: center;
-    font-size: 45px;
-  }
+  color: aliceblue;
+  position: relative;
+  z-index: 100;
+  /* border: 1px solid whitesmoke; */
+  margin-bottom: 4%;
+  padding: 9px;
+  text-align: center;
+}
+.section h2 {
+  border: 2px solid rgb(200, 2, 164);
+  border-radius: 12px;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding: 5px;
+  text-align: center;
+  background-image: url(https://media.giphy.com/media/3ov9jLGGAksVwJZra0/giphy.gif);
+}
 
- 
+.section p {
+  padding: 10px;
+  text-align: center;
+  font-size: 45px;
+}
+
 .logo {
-    margin: 29px;
-    padding: 8px;
-    display: inline-block;
-    justify-content: center;
-    
-  }
+  margin: 29px;
+  padding: 8px;
+  display: inline-block;
+  justify-content: center;
+}
 
-  /* #social{
+/* #social{
     border: 2px solid whitesmoke;
    
   } */
 
+/* project css start here */
 
-  /* project css start here */
-  
-
-#projects p a{
+#projects p a {
   margin-top: 15px;
   color: azure;
   font-style: italic;
   text-decoration: none;
-
 }
 
-.section a{
+.section a {
   display: inline-block;
   text-decoration: none;
-  color: #efefef
+  color: #efefef;
 }
-
 
 li {
   margin-bottom: 20px;
@@ -175,10 +158,9 @@ progress::-moz-progress-bar {
   background: #efefef;
 }
 
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .pfp{
+  .pfp {
     color: aliceblue;
     position: relative;
     z-index: 100;
@@ -187,37 +169,51 @@ progress::-moz-progress-bar {
     padding: 5px;
     border-radius: 20px;
     background-image: url(https://media.giphy.com/media/3ov9jLGGAksVwJZra0/giphy.gif);
-}
+  }
 
-h1{ 
-  font-size: 50px;
-  text-align: center;
-  color: #008f0a;
-  
-} 
+  h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #008f0a;
+  }
 
-.logo {
-  margin: 8px;
-  padding: 2px;
-  display: inline-block;
-  justify-content: center;
-  
-}
+  .logo {
+    margin: 8px;
+    padding: 2px;
+    display: inline-block;
+    justify-content: center;
+  }
 
-.logo a img{
-  
-  height: 50px;
-  width: 50px;
-}
+  .logo a img {
+    height: 50px;
+    width: 50px;
+  }
+  .section a img {
+    height: 50px;
+    width: 50px;
+  }
+  body {
+    background-color: #faaca8;
+    background-image: linear-gradient(19deg, #faaca8 0%, #ddd6f3 100%);
+    background-size: cover;
+    background-repeat: cover;
+    z-index: -1;
+  }
 
-body{
-  background-image: url("./images/bc.jpg");
- background-size: cover;
- background-repeat: cover;
- z-index: -1;
-}
+  footer {
+    margin-top: 30%;
+    padding: 0px;
+    height: 75px;
+    text-align: center;
+    position: relative;
+    background-color: #faaca8;
+    background-image: linear-gradient(19deg, #faaca8 0%, #ddd6f3 100%);
+  }
 
-
-
-
+  #footer-content {
+    font-size: 25px;
+    margin: auto;
+    padding: 25px;
+    color: aquamarine;
+  }
 }
