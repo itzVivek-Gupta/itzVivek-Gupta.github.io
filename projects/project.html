@@ -50,21 +50,18 @@
 </body>
 
 <script>
-let url = document.querySelector("#url");
-const media =()=>{
-letq = matchMedia("(max-width:600px)")
-if(q.matches){
+let url = document.querySelector("#url")
+const mediaQuery = window.matchMedia('(min-width: 600px)')
+// Check if the media query is true
+if (mediaQuery.matches) {
+  // Then trigger an alert
   url.setAttribute("href","https://onedrive.live.com/redir?resid=B46D7B5DA0014A1A%21134&authkey=%21AITc_6MWpSqwwQQ&page=View&wdAccPdf=0&wdEmbedFS=1")
 console("url changed")
 }
-
 else{
   url.setAttribute("href","./Human_Facial_Expression_Recognition.html")
   console("else statement working")
 }
-
-}
-
 
 </script>
 </html>
