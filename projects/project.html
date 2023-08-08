@@ -18,7 +18,8 @@
       <div class="project">
         <h3>Project 1</h3>
         <p>Human Facial Expression Recognition By Using Convolutional Neural Network</p>
-        <a href="./Human_Facial_Expression_Recognition.html" target="_blank">View Project</a>
+        <a id="url" href="./Human_Facial_Expression_Recognition.html" target="_blank">View Project</a>
+        <!-- https://onedrive.live.com/redir?resid=B46D7B5DA0014A1A%21134&authkey=%21AITc_6MWpSqwwQQ&page=View&wdAccPdf=0&wdEmbedFS=1 -->
       </div>
       
       <div class="project">
@@ -47,4 +48,23 @@
     <p>&copy; 2023 @itzvivek-gupta</p>
   </footer>
 </body>
+
+<script>
+let url = document.querySelector("#url");
+const media =()=>{
+letq = matchMedia("(max-width:600px)")
+if(q.matches){
+  url.setAttribute("href","https://onedrive.live.com/redir?resid=B46D7B5DA0014A1A%21134&authkey=%21AITc_6MWpSqwwQQ&page=View&wdAccPdf=0&wdEmbedFS=1")
+console("url changed")
+}
+
+else{
+  url.setAttribute("href","./Human_Facial_Expression_Recognition.html")
+  console("else statement working")
+}
+
+}
+
+
+</script>
 </html>
